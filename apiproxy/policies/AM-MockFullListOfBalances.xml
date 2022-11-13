@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-MockFullListOfBalances">
+    <DisplayName>AM-MockFullListOfBalances</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <AssignVariable>
+        <Name>listOfAllResultsByCustomer</Name>
+        <Template>[
+    {
+        "customer": "10203040",
+        "balances": [
+            {
+                "accountId": "0016272940883924",
+                "availableAmount": {
+                  "amount": "15673.00",
+                  "currency": "USD"
+                },
+                "blockedAmount": {
+                  "amount": "5000.00",
+                  "currency": "USD"
+                },
+                "automaticallyInvestedAmount": {
+                  "amount": "500.00",
+                  "currency": "USD"
+                }
+            },
+            {
+                "accountId": "0016272830853116",
+                "availableAmount": {
+                  "amount": "200000.09",
+                  "currency": "USD"
+                },
+                "blockedAmount": {
+                  "amount": "88.88",
+                  "currency": "USD"
+                },
+                "automaticallyInvestedAmount": {
+                  "amount": "200000.09",
+                  "currency": "USD"
+                }
+            }
+        ]
+    }
+]</Template>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>resultsType</Name>
+        <Value>balances</Value>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo type="request" transport="http" createNew="false"/>
+</AssignMessage>

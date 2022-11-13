@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="OA_Verify_Access_Token_Accounts_Balances">
+    <DisplayName>OA_Verify_Access_Token_Accounts_Balances</DisplayName>
+    <Properties/>
+    <Operation>VerifyAccessToken</Operation>
+    <AccessToken>jwt.VJ_Verify_Access_Token.decoded.claim.assertion</AccessToken>
+    <Scope>accounts:balances:read</Scope>
+</OAuthV2>

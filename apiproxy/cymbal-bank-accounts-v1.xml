@@ -1,0 +1,27 @@
+<APIProxy revision="19" name="cymbal-bank-accounts-v1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1667750070663</CreatedAt>
+    <LastModifiedAt>1667750070663</LastModifiedAt>
+    <BasePaths>/cymbal/v1/accounts</BasePaths>
+    <Policies>
+        <Policy>AM-MockFullListOfAccounts</Policy>
+        <Policy>AM-MockFullListOfBalances</Policy>
+        <Policy>AM-CustomerAccounts</Policy>
+        <Policy>EV_Access_Token</Policy>
+        <Policy>VJ_Verify_Access_Token</Policy>
+        <Policy>OA_Verify_Access_Token_Accounts</Policy>
+        <Policy>OA_Verify_Access_Token_Accounts_Balances</Policy>
+        <Policy>AM-SetCustomerId</Policy>
+        <Policy>EV-GetAllAcountsForCustomer</Policy>
+        <Policy>EV-GetAllBalancesForCustomer</Policy>
+        <Policy>AM-CustomerBalances</Policy>
+        <Policy>AM-AccountBalances</Policy>
+        <Policy>EV-GetAccountBalancesForCustomer</Policy>
+        <Policy>EV-AccountIdFromURL</Policy>
+        <Policy>CORS</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>
